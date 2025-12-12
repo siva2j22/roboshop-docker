@@ -1,6 +1,6 @@
 FROM maven:3.9.11
 EXPOSE 8080
-WOKDIR /opt/server
+WORKDIR /opt/server
 COPY pom.xml .
 copy src .
 RUN mvn clean package 
